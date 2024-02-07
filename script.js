@@ -15,7 +15,7 @@ const card = document.getElementById("card");
 const closeCard = document.getElementById("close-card");
 
 button.addEventListener("click", () => {
-  card.className = "card work";
+  card.className = "card card-work";
 });
 
 closeCard.addEventListener("click", () => {

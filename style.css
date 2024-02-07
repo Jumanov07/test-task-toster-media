@@ -10,6 +10,7 @@
 @media screen and (min-width: 350px) and (max-width: 600px) {
   .menu {
     width: 100%;
+    z-index: 1000;
     height: 100vh;
     background-color: white;
     position: absolute;
@@ -22,6 +23,7 @@
 
   .work {
     display: block;
+    top: 0;
   }
 
   .menu > .head {
@@ -329,7 +331,7 @@
     display: none;
   }
 
-  .work {
+  .card-work {
     display: block;
     top: 1830px;
     left: 90px;
