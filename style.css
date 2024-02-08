@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
   font-family: "Poppins", sans-serif;
 }
 
@@ -19,6 +19,21 @@
     gap: 40px;
     padding: 18px 12px;
     display: none;
+
+    animation-name: slideInFromBottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .work {
@@ -54,8 +69,11 @@
   }
 
   .menu > nav > ul > li > p {
-    font-weight: bold;
-    text-shadow: 3px 3px 7px black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   header {
@@ -64,10 +82,14 @@
 
   header > p {
     text-align: center;
-    font-size: 0.75rem;
     color: white;
     background-color: #ec6566;
     padding: 3px 24px;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
   }
 
   header > div {
@@ -98,14 +120,13 @@
   main > .intro > h1 {
     padding-top: 10px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(
-      60deg,
-      rgba(142, 139, 139, 1) 44%,
-      rgba(255, 248, 248, 1) 70%
-    );
+    background-image: linear-gradient(96.74deg, #878787 0%, #fefefe 100%);
   }
 
   main > .intro > p {
@@ -114,11 +135,7 @@
     font-size: 1rem;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(
-      60deg,
-      rgba(142, 139, 139, 1) 44%,
-      rgba(255, 248, 248, 1) 70%
-    );
+    background-image: linear-gradient(96.74deg, #878787 0%, #fefefe 100%);
   }
 
   main > .intro > .rating-reviews {
@@ -130,6 +147,10 @@
     flex-direction: column;
     gap: 16px;
     border-radius: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 
   main > .intro > .rating-reviews > .rating {
@@ -164,14 +185,20 @@
   }
 
   main > .intro > .discount p:first-child {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
   }
 
   main > .intro > .discount p:last-child {
     font-size: 1.8rem;
     text-decoration: line-through;
     text-decoration-color: red;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0em;
   }
 
   main > .intro > img {
@@ -205,12 +232,18 @@
   }
 
   main > .about > h1 {
-    font-size: 2rem;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
   }
 
   main > .about > .red-text {
     color: red;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
     margin: 20px 0 10px;
   }
 
@@ -229,26 +262,45 @@
 
   main > .about > .sale {
     text-align: center;
-    font-weight: 500;
+    padding: 8px 50px;
+    background-color: #f5f5f6;
+    border-radius: 1000px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 
   main > .about > .sale > span {
     color: #b15fff;
+    font-weight: 600;
   }
 
   main > .about > .discount > span:first-child {
     text-decoration: line-through;
     text-decoration-color: red;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 
   main > .about > .discount > span:last-child {
     color: red;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 
   main > .about > .afterpay {
     text-align: center;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
   }
 
   main > .about > .afterpay > p {
@@ -266,38 +318,54 @@
 
   main > .about > .button > button {
     background-color: #b0fde4;
-    padding: 14px 105px;
+    padding: 14px 50px;
     width: 100%;
     border: none;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 
   main > .about > .free {
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
   }
 
-  main > .about > .free > img {
+  main > .about > .free > img:first-child {
+    transform: rotate(90deg);
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  main > .about > .free > img:last-child {
     transform: rotate(270deg);
     margin-left: 10px;
     width: 20px;
     height: 20px;
   }
 
-  main > .about > .firms {
+  main > .about > div > .firms {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  main > .about > .firms > img {
+  main > .about > div > .firms > img {
     width: 74px;
     height: 23px;
   }
 
-  main > .about > .firms > img:last-child {
+  main > .about > div > .firms > img:last-child {
     width: 29px;
     height: 35px;
   }
@@ -318,24 +386,44 @@
     color: black;
     padding: 6px 18px;
     border: none;
-    border-radius: 15px;
+    border-radius: 100px;
     cursor: pointer;
+  }
+
+  footer > p.collapsed {
+    max-height: 4em;
+    overflow: hidden;
+  }
+
+  footer > p {
+    transition: max-height 0.3s ease;
   }
 
   .card {
     padding: 20px 16px;
     border: 2px solid #b0fde4;
     background-color: white;
-    border-radius: 20px;
     position: absolute;
     display: none;
+    z-index: 999;
+    width: 90%;
+    border-radius: 12px;
+
+    animation-name: slideCard;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 15px 15px 50px black;
   }
 
-  .card-work {
-    display: block;
-    top: 1830px;
-    left: 90px;
-    box-shadow: 15px 15px 50px black;
+  @keyframes slideCard {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .card > .head {
@@ -352,18 +440,23 @@
   }
 
   .card > h2 {
-    font-size: 1.2rem;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
   }
 
   .card > .content {
     display: flex;
     flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   .card > .content > .head {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
   }
 
   .card > .content > .head > p:first-child {
@@ -380,10 +473,13 @@
   .card > .content > .main {
     color: #545454;
     margin-top: 20px;
-    padding: 0 20px 20px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px dotted black;
+  }
+
+  .card > hr {
+    border: 1px dotted black;
+    margin-top: 20px;
   }
 
   .card > .content > .main > div > .title {
@@ -402,8 +498,10 @@
     background-color: #b0fde4;
     padding: 12px 75px;
     width: 100%;
-    font-size: 1.3rem;
-    font-weight: bold;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 }

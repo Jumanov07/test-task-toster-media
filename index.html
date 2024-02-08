@@ -69,6 +69,7 @@
             <img
               src="./assets/icons/circle-down-arrow.svg"
               alt="circle-down-arrow"
+              id="circle-down-arrow"
             />
           </div>
         </div>
@@ -119,11 +120,11 @@
 
         <br />
 
-        <p class="sale">sale ends in <span>17:34:53</span></p>
+        <p class="sale">sale ends in <span id="timer">17:34:53</span></p>
 
         <br />
 
-        <h1>£199</h1>
+        <h1 style="line-height: 40px">£199</h1>
 
         <p class="discount"><span>£1099</span> <span>–75%</span></p>
 
@@ -142,6 +143,49 @@
           <button>Buy now pay later</button>
         </div>
 
+        <div class="card" id="card">
+          <div class="head">
+            <img src="./assets/icons/afterpay-logo.svg" alt="afterpay-logo" />
+            <img src="./assets/icons/close.svg" alt="close" id="close-card" />
+          </div>
+
+          <br />
+
+          <h2>Make easy monthly payments</h2>
+
+          <br />
+
+          <div class="content">
+            <div class="head">
+              <p>£9.99/mo.</p>
+              <p>10 months</p>
+            </div>
+
+            <div class="main">
+              <div>
+                <p class="title">APR</p>
+                <p>0%</p>
+              </div>
+
+              <div>
+                <p class="title">Interest</p>
+                <p>£0</p>
+              </div>
+
+              <div>
+                <p class="title">Total</p>
+                <p>£89.00</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="button">
+            <button>Confirm to checkout</button>
+          </div>
+        </div>
+
         <p>
           In stock, ready for ship <br />
           Delivery in 2-4 days in UK
@@ -151,30 +195,42 @@
 
         <p class="free">
           Free shipping in United Kingdom
-          <img src="./assets/icons/arrow-right.svg" alt="arrow-top" />
+          <img
+            id="first-icon"
+            src="./assets/icons/arrow-right.svg"
+            alt="arrow-down"
+          />
+
+          <img
+            id="second-icon"
+            src="./assets/icons/arrow-right.svg"
+            alt="arrow-top"
+          />
         </p>
 
         <br />
 
-        <div class="firms">
-          <img src="./assets/images/dhl.png" alt="dhl" />
-          <img src="./assets/images/dpd.png" alt="dpd" />
-          <img src="./assets/images/fedex.png" alt="fedex" />
-          <img src="./assets/images/ups.png" alt="ups" />
+        <div id="drop-down" class="drop-down">
+          <div class="firms">
+            <img src="./assets/images/dhl.png" alt="dhl" />
+            <img src="./assets/images/dpd.png" alt="dpd" />
+            <img src="./assets/images/fedex.png" alt="fedex" />
+            <img src="./assets/images/ups.png" alt="ups" />
+          </div>
+
+          <br />
+
+          <p>
+            All purchases are shipped from our warehouse in United Kingdom and
+            are fully insured with a tracking number. Tracked delivery between
+            2-4 days in United Kingdom + Free Delivery.
+          </p>
         </div>
-
-        <br />
-
-        <p>
-          All purchases are shipped from our warehouse in United Kingdom and are
-          fully insured with a tracking number. Tracked delivery between 2-4
-          days in United Kingdom + Free Delivery.
-        </p>
       </section>
     </main>
 
     <footer>
-      <p>
+      <p id="text" class="collapsed">
         *Information is not a public offer This site is not part of the Facebook
         or Facebook Inc. website. Also, this site is not endorsed by Facebook in
         any way FACEBOOK is a trademark of FACEBOOK, Inc. Facebook provides a
@@ -206,49 +262,8 @@
         please email.
       </p>
 
-      <button>Read less</button>
+      <button id="readMoreButton">Read more</button>
     </footer>
-
-    <div class="card" id="card">
-      <div class="head">
-        <img src="./assets/icons/afterpay-logo.svg" alt="afterpay-logo" />
-        <img src="./assets/icons/close.svg" alt="close" id="close-card" />
-      </div>
-
-      <br />
-
-      <h2>Make easy monthly payments</h2>
-
-      <br />
-
-      <div class="content">
-        <div class="head">
-          <p>£9.99/mo.</p>
-          <p>10 months</p>
-        </div>
-
-        <div class="main">
-          <div>
-            <p class="title">APR</p>
-            <p>0%</p>
-          </div>
-
-          <div>
-            <p class="title">Interest</p>
-            <p>£0</p>
-          </div>
-
-          <div>
-            <p class="title">Total</p>
-            <p>£89.00</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="button">
-        <button>Confirm to checkout</button>
-      </div>
-    </div>
 
     <script src="./script.js"></script>
   </body>
